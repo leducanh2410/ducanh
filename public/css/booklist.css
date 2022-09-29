@@ -1,0 +1,224 @@
+/**
+ * List Container
+ */
+
+ .list-container {
+    position: relative;
+    /* background-color: #ffffff40 !important; */
+    /* border: #444444 1px solid; */
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    min-height: 400px;
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+
+/**
+ * List Container - Status Menu
+ */
+.status-menu-container {
+    /* background-color: #222222; */
+    border-bottom: #444444 2px solid;
+
+    /* border-bottom: #444444 1px solid; */
+    width: 100%;
+    min-height: 60px;
+    height: 4vh;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+    white-space: nowrap;
+    z-index: 1
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.status-menu-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.status-menu-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* .status-menu-container.fixed {
+    position: fixed;
+    display: block;
+    top: 0;
+} */
+
+/* .status-menu-container.fixed + div.list-block {
+    margin-top: 62px;
+} */
+
+.status-menu-container .status-menu {
+    display: table;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 40px 0;
+}
+
+.status-menu-container .status-menu .status-button {
+    position: relative;
+    display: table-cell;
+    padding: 12px 0;
+    margin: 0;
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6em;
+    color: #ffffff;
+}
+
+.status-menu-container .status-menu .status-button.on {
+    color: #44FFFF;
+    font-weight: bold;
+}
+
+.status-menu-container .status-menu .status-button:hover {
+  color: cyan;
+}
+
+.status-menu-container .status-menu .status-button:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #44FFFF;
+    display: block;
+    width: 100%;
+    height: 4px;
+    content: '';
+    opacity: 0;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.status-menu-container .status-menu .status-button.on:after, .status-menu .status-button:hover:after {
+    opacity: 1
+}
+
+/**
+ * List Item
+ */
+.list-table {
+    /* display: table;
+    margin: 0 auto; */
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+
+    /* height: 80vh; */
+    overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.list-table::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.list-table {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.list-table .list-item {
+    /* border: #f0f0f0 1px solid; */
+    display: block;
+    font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    width: 210px;
+    /* height: 100%; */
+    max-height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    
+
+
+    /* display: table-cell; */
+    /* border: red 3px solid; */
+
+    /* margin: 10px;
+
+    width: 210px;
+    height: 100%; */
+}
+
+.list-table .list-item .data.image{
+    background-repeat: no-repeat;
+    display: inline-block;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+    -ms-interpolation-mode: bicubic;
+    position: relative;
+    
+}
+
+.list-table .list-item .data.image img {
+    width: 210px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.list-table .list-item .data.title {
+    display: table-cell;
+    width: 210px;
+    height: 60px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    
+
+}
+
+.list-table .list-item .data.title a {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+/**
+ * Notice Container
+ */
+
+.notice-container {
+
+}
+
+.notice-container .notices {
+
+}
+
+.notice-container .button-container {
+
+}
+
+.notice-container .button-container a.button{
+    
+}

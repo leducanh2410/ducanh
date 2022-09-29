@@ -1,0 +1,30 @@
+.popular-container {
+    border-bottom: #1f1f1f 2px solid;
+
+}
+
+.popular-container .popular-title {
+    font-size: 30px;
+
+}
+
+.popular-container .popular-book {
+
+}
+
+.popular-container .popular-book .book {
+
+}
+
+.recent-added-container {
+
+}
+
+.recent-added-container .recent-added-title {
+    font-size: 30px;
+
+}
+
+.recent_added_container .recent_added_book {
+
+}
